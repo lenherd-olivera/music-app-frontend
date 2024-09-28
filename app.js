@@ -14,6 +14,7 @@ function startLevel() {
         .catch(error => console.error('Error starting level:', error));
 }
 
+
 function submitAnswer() {
     const answer = document.getElementById('userAnswer').value;
     fetch(`${backendUrl}/api/music/submit-answer?answer=${answer}`, {
