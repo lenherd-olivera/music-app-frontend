@@ -5,10 +5,12 @@ document.getElementById('startButton').addEventListener('click', startLevel);
 document.getElementById('submitAnswer').addEventListener('click', submitAnswer);
 
 function startLevel() {
-    fetch(`${backendUrl}/api/music/start-level/1`)
+    const level = document.getElementById('levelSelect').value;
+    
+    fetch(`${backendUrl}/api/music/start-level/${level}`)
         .then(response => response.text())
         .then(data => {
-            document.getElementById('instructions').textContent = data;
+            document.getElementById('instructions').textContent = `Level ${level} started: ${data}`;
             document.getElementById('feedback').textContent = "";
             playSound(data); // Play the sound based on the response
         })

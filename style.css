@@ -1,25 +1,68 @@
+/* General body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
+header nav ul li {
+    margin: 0 10px;
+}
 
-.container {
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 4px;
+}
+
+/* Main container styles */
+main.container {
     background-color: white;
     padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
     border-radius: 8px;
+    text-align: center;
 }
 
-input[type="text"] {
+h1 {
+    margin-bottom: 0;
+}
+
+.level-selection {
+    margin: 20px 0;
+}
+
+input[type="text"], select {
     padding: 10px;
-    width: 60%;
+    width: 80%;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -42,4 +85,12 @@ button:hover {
 #feedback {
     margin-top: 15px;
     font-weight: bold;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    border-top: 1px solid #ddd;
 }

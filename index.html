@@ -3,19 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music App</title>
+    <title>Music Ear Training App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1>Music App</h1>
-        <button id="startButton">Start Level 1</button>
-        <div id="instructions">Press "Start Level 1" to begin</div>
+    <header>
+        <h1>Music Ear Training App</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Test Your Musical Ear</h2>
+        <div class="level-selection">
+            <label for="levelSelect">Choose a level:</label>
+            <select id="levelSelect">
+                <option value="1">Level 1 - Identify Single Notes</option>
+                <option value="2">Level 2 - Identify Major Chords</option>
+                <option value="3">Level 3 - Identify Minor Chords</option>
+                <option value="4">Level 4 - Identify Diminished Chords</option>
+                <option value="5">Level 5 - Identify Augmented Chords</option>
+                <option value="6">Level 6 - Combination of 2 Notes/Chords</option>
+                <option value="7">Level 7 - Combination of 3 Notes/Chords</option>
+                <option value="8">Level 8 - Identify Jazz Chords</option>
+                <option value="9">Level 9 - Basic Chord Progressions</option>
+                <option value="10">Level 10 - Advanced Chord Progressions</option>
+                <option value="11">Level 11 - Modal Interchange</option>
+                <option value="12">Level 12 - Polyrhythms</option>
+                <option value="13">Level 13 - Chord Inversions</option>
+                <option value="14">Level 14 - Identify Full Scales</option>
+                <option value="15">Level 15 - Identify Modulations</option>
+                <option value="16">Level 16 - Identify Melodic Lines</option>
+                <option value="17">Level 17 - Identify Polychords</option>
+                <option value="18">Level 18 - Identify Extended Chords</option>
+                <option value="19">Level 19 - Harmonized Scales</option>
+                <option value="20">Level 20 - Identify Jazz Standards</option>
+            </select>
+            <button id="startButton">Start Level</button>
+        </div>
+        <div id="instructions">Select a level and press "Start Level" to begin</div>
         <input type="text" id="userAnswer" placeholder="Enter your answer here..." />
         <button id="submitAnswer">Submit</button>
         <div id="feedback"></div>
-    </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Music Ear Training App. All Rights Reserved.</p>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
