@@ -1,7 +1,7 @@
 /* General body styles */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('path-to-your-background-image.png'); /* Use the generated image */
+    background-image: url('images/music-background.png'); /* Use the generated image */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
