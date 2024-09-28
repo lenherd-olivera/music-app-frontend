@@ -1,20 +1,25 @@
 /* General body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-image: url('path-to-your-background-image.png'); /* Use the generated image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: #ffffff;
 }
 
 /* Header styling */
 header {
-    background-color: #007bff;
+    background-color: #006d7d;
     color: white;
     padding: 10px 20px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header nav ul {
@@ -37,13 +42,13 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #0056b3;
+    background-color: #004c4c;
     border-radius: 4px;
 }
 
 /* Main container styles */
 main.container {
-    background-color: white;
+    background-color: rgba(0, 109, 125, 0.9); /* Teal background with transparency */
     padding: 20px;
     margin: 20px auto;
     max-width: 600px;
@@ -52,8 +57,8 @@ main.container {
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 0;
+h1, h2 {
+    margin-bottom: 10px;
 }
 
 .level-selection {
@@ -71,15 +76,16 @@ input[type="text"], select {
 button {
     padding: 10px 15px;
     margin: 5px;
-    background-color: #007bff;
+    background-color: #00a3b2;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #006d7d;
 }
 
 #feedback {
@@ -88,9 +94,10 @@ button:hover {
 }
 
 footer {
-    background-color: #f1f1f1;
+    background-color: #006d7d;
     text-align: center;
     padding: 10px 0;
     margin-top: auto;
-    border-top: 1px solid #ddd;
+    color: white;
+    border-top: 1px solid #004c4c;
 }
