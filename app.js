@@ -1,5 +1,5 @@
 // Replace this with your actual backend URL from Render
-const backendUrl = 'http:localhost:8081';
+const backendUrl = 'https://the-music-app-1.onrender.com';
 
 document.getElementById('startButton').addEventListener('click', startLevel);
 document.getElementById('submitAnswer').addEventListener('click', submitAnswer);
